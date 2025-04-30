@@ -13,6 +13,10 @@ def main():
         if index != emptyObstacleY:
             obstacles.push(game.create_sprite(4, index))
 
+    while True:
+        while obstacles.length > 0 and obstacles[0] == 0:
+            pass
+
 def on_button_a_pressed():
     global bird
     bird.change(LedSpriteProperty.Y, -1)

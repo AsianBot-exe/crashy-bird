@@ -12,6 +12,11 @@ function main() {
         }
         
     }
+    while (true) {
+        while (obstacles.length > 0 && obstacles[0] == 0) {
+            
+        }
+    }
 }
 
 input.onButtonPressed(Button.A, function on_button_a_pressed() {
