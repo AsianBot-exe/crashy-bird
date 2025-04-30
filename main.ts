@@ -13,8 +13,8 @@ function main() {
         
     }
     while (true) {
-        while (obstacles.length > 0 && obstacles[0] == 0) {
-            
+        while (obstacles.length > 0 && obstacles[0].get(LedSpriteProperty.X) == 0) {
+            _py.py_array_pop(obstacles, 0)
         }
     }
 }

@@ -14,8 +14,8 @@ def main():
             obstacles.push(game.create_sprite(4, index))
 
     while True:
-        while obstacles.length > 0 and obstacles[0] == 0:
-            pass
+        while obstacles.length > 0 and obstacles[0].get(LedSpriteProperty.X) == 0:
+            obstacles.pop(0)
 
 def on_button_a_pressed():
     global bird
