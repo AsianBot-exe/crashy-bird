@@ -16,7 +16,7 @@ def main():
     while True:
         while obstacles.length > 0 and obstacles[0].get(LedSpriteProperty.X) == 0:
             obstacles.pop(0)
-
+        
 def on_button_a_pressed():
     global bird
     bird.change(LedSpriteProperty.Y, -1)
